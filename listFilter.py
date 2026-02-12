@@ -1,4 +1,11 @@
-data=[10,"python","",25,"Loop",40]
+n=int(input("enter number:"))
+data=[0]*n
+for i in range(n):
+    x=input("enter data:")
+    if x.isdigit():
+        data[i]=int(x)
+    else:
+        data[i]=x
 number=[]
 string=[]
 for i in data:
