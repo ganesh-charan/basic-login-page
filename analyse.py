@@ -30,7 +30,7 @@ for i in range(n):
 
      elif(m>=0 and m<= 39 ):
        if(r%2==0 and 39-m<=6):
-        print("reg_no",r,"->",(m+6), "->PASSED BY GRACE MARKS OF 5 ")
+        print("reg_no",r,"->",(m+6), "->PASSED BY GRACE MARKS OF 6")
        else:
         ivs+=1
         vs-=1
