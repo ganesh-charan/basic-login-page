@@ -1,5 +1,6 @@
 L="paturu v n s ganesh charan"
-print("value of L:",L)
+print("my name:",L)
+print("L=",len(L)-L.count(" "))
 PLI=(len(L)-L.count(" "))%3
 print("VALUE OF PLI:",PLI)
 print("given list is:")
@@ -22,8 +23,24 @@ for w in List:
        overload.append(w)
 
 
+print("invalid entries list:",invalid_entries)
+print("very light entries list:",very_light)
+print("normal load list",normal_load)
+print("heavy load list",heavy_load)
+print("overload list",overload)
+
+print("since my PLI=",PLI," as per assignment RULE A is implemented")
+for i in overload:
+    invalid_entries.append(i)
+
+overload=[]
+print("List after moving all overload entries to invalid entries as per PLI:")
 print(invalid_entries)
-print(very_light)
-print(normal_load)
-print(heavy_load)
-print(overload)
+print("="*15)
+print("ALL ENTRIES LISTS:")
+print("invalid entries list:",invalid_entries)
+print("very light entries list:",very_light)
+print("normal load list",normal_load)
+print("heavy load list",heavy_load)
+print("overload list",overload)
+print("="*15)
