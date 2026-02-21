@@ -5,7 +5,6 @@ for i in range(n):
     x=int(input("enter duration of song:"))
     data[i]=int(x)
 x=min(data)
-print("="*50)
 if (x <= 0):
     print("Invalid duration detected")
 else:
@@ -34,7 +33,10 @@ else:
       else:
           CATEGORY += "IRREGULAR"
           RECOMMENDATION += "RANDOM LISTENING SESSION"
-    print("=" * 50)
+      if(NUMBER_OF_SONGS%2==0):
+          CATEGORY += " EVEN PLAYLIST"
+
+    print("=" *50 )
     print("TOTAL DURATION OF SONGS:", TOTAL_DURATION)
     print("TOTAL NUMBER OF SONGS:", NUMBER_OF_SONGS)
     print("CATEGORY:", CATEGORY)
