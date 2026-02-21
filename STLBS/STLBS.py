@@ -3,7 +3,7 @@ print("my name:",L)
 print("="*15)
 PLI=(len(L)-L.count(" "))%3
 print("given list is:")
-List=[4, 18, 70, -2, 30, 55, 0]
+List=[4, 78, 80, -2, 30, 55, 0]
 print("="*15)
 very_light=[]
 normal_load=[]
