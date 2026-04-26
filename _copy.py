@@ -2,8 +2,8 @@ import copy
 
 def generate_data():
     return [
-        {"id": 1, "data": {"files": ["a.txt", "b.txt"], "usage": 500}},
-        {"id": 2, "data": {"files": ["c.txt"], "usage": 300}}
+        {"id": 1, "data": {"files": ["a.txt"], "usage": 500}},
+        {"id": 2, "data": {"files": ["b.txt","c.txt"], "usage": 300}}
     ]
 
 def replicate_data(data):
@@ -12,7 +12,7 @@ def replicate_data(data):
 def modify_data(assign, shallow, deep):
     for i in range(len(assign)):
         assign[i]["data"]["files"].append("A.txt")
-        shallow[i]["data"]["files"].append("S.txt")
+        shallow[i]["data"]["files"].append("P.txt")
         deep[i]["data"]["files"].append("D.txt")
         shallow[i]["data"]["usage"] += 50
         deep[i]["data"]["usage"] += 100
